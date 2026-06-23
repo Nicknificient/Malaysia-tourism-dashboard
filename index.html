@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malaysia Tourism: Where the World Comes to Stay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-tagline">Malaysia Tourism · Data Visualisation 2026</p>
+      <h1 class="hero-title">Where the World<br><em>Comes to Stay</em></h1>
+      <p class="hero-subtitle">A visual story of Malaysia's tourism recovery — from visitor origins and arrival routes to hotel capacity, occupancy pressure, and revenue resilience.</p>
+    </div>
+    <div class="hero-image">
+      <img
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAGQAZADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiq+pSXUOnXMtlbrcXSRO0MLPtEjgHapPbJwM0AWKK4H4C+LvEnj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AAo/tKff8EH1ddj5ab4HlmLN4811ie5XJ/8AQ6b/AMKLTzYpv+E41rzIm3xP5Y3I3qp3ZB9xX1SPBujDqLg/WU09fCOiDrBK31laj+059/wQfV0fLB+Ctz9sN6PiF4g+1FPLM/PmFM527t+cZ7ZxTz8G9TJ/5KV4k/F3/wDjlfVK+FdCX/lyz9ZGP9akXw3oa9NOh/HJ/rS/tOp3/BB9XifJlv8ABK5t5pZoPiFrsMkzbpXjBVpD6sRJlj7mtOz+Fmq27Ar8UvGCY/553TL/AOzmvqZNE0hPu6ba/wDfsGp0sLFPuWVsv0iUf0qXmdR/0hrDxPA/Cug69ot5BcL8QvGeo+S4fybm+EkT4PRlKkkHuM16jYeIvEcpA/sf7QPVYmT9eldkiIgwiqv0GKdXLUxHtHdo0jDl2ZBYSzz2qSXNsbaU9Yy4bH4ip6KK5jQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q=="
+        alt="Petronas Twin Towers"
+        class="hero-towers"
+      />
+    </div>
+  </div>
+</header>
+
+<!-- SECTION NAV -->
+<nav class="section-nav">
+  <div class="section-nav-inner">
+    <a href="#sec-arrivals">Visitor Markets</a>
+    <a href="#sec-transport">Arrival Routes</a>
+    <a href="#sec-hotels">Hotel Supply</a>
+    <a href="#sec-occupancy">Occupancy Patterns</a>
+    <a href="#sec-revenue">Revenue Resilience</a>
+  </div>
+</nav>
+
+<main class="dashboard">
+
+  <!-- ═══ 01 SOURCE MARKETS ═══ -->
+  <section class="section" id="sec-arrivals">
+    <div class="section-header">
+      <div>
+        <p class="section-num">01 · Visitor Markets</p>
+        <h2 class="section-title">Who Visits Malaysia — and Which Markets Are Growing?</h2>
+        <p class="section-subtitle">Malaysia's visitor base is strongly regional, with ASEAN countries shaping the scale and speed of tourism recovery.</p>
+      </div>
+    </div>
+
+    <!-- Row 1: Two split bar charts side by side -->
+    <div class="grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <p class="card-title">Singapore Leads Malaysia's Visitor Market</p>
+        <div class="bullet-legend-inline">
+          <svg width="360" height="18" viewBox="0 0 360 18" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+            <rect x="0" y="4" width="24" height="10" rx="2" fill="#C9A96E" opacity="0.45"/>
+            <text x="28" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">2019 benchmark</text>
+            <rect x="138" y="5" width="24" height="8" rx="2" fill="#1B5E6E"/>
+            <text x="166" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">2025 arrivals</text>
+            <line x1="264" y1="9" x2="290" y2="9" stroke="#C85A3A" stroke-width="2.5"/>
+            <text x="294" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">2024 marker</text>
+          </svg>
+        </div>
+        <div class="chart-wrap" id="chart-arrivals-top6"></div>
+      </div>
+      <div class="card">
+        <p class="card-title">Regional Neighbours Continue to Dominate Arrivals</p>
+        <div class="bullet-legend-inline">
+          <svg width="360" height="18" viewBox="0 0 360 18" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+            <rect x="0" y="4" width="24" height="10" rx="2" fill="#C9A96E" opacity="0.45"/>
+            <text x="28" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">2019 benchmark</text>
+            <rect x="138" y="5" width="24" height="8" rx="2" fill="#2E7D8C"/>
+            <text x="166" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">2025 arrivals</text>
+            <line x1="264" y1="9" x2="290" y2="9" stroke="#C85A3A" stroke-width="2.5"/>
+            <text x="294" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">2024 marker</text>
+          </svg>
+        </div>
+        <div class="chart-wrap" id="chart-arrivals-7to15"></div>
+      </div>
+    </div>
+
+    <!-- Row 2: Treemap (left) + Insight text (right) — 50/50 -->
+    <div class="grid-2" style="align-items:stretch;">
+      <div class="card">
+        <p class="card-title">ASEAN Accounts for the Largest Share of Visitors</p>
+        <p class="card-subtitle">Area = total arrivals · Hover for region, arrivals &amp; share</p>
+        <div class="chart-wrap" id="chart-treemap" style="min-height:300px;"></div>
+        <div class="legend-row" id="treemap-legend" style="margin-top:14px;"></div>
+      </div>
+      <div class="card insight-card">
+        <p class="card-title">What This Reveals</p>
+        <p class="card-subtitle">What the data tells us about Malaysia's visitors in 2025</p>
+        <div class="insight-list">
+          <div class="insight-entry">
+            <span class="insight-flag">🌏</span>
+            <div>
+              <div class="insight-headline">ASEAN remains the backbone</div>
+              <div class="insight-body">ASEAN dominates the treemap with the largest share of arrivals. Singapore alone contributes 9.3M visitors — nearly 1 in 4 tourists — reflecting Malaysia's deep regional connectivity.</div>
+            </div>
+          </div>
+          <div class="insight-entry">
+            <span class="insight-flag">📈</span>
+            <div>
+              <div class="insight-headline">Recovery is uneven across markets</div>
+              <div class="insight-body">China and India have surpassed their 2019 benchmarks, while Japan and South Korea still trail. Emerging markets like Bangladesh and Myanmar are growing fastest of all.</div>
+            </div>
+          </div>
+          <div class="insight-entry">
+            <span class="insight-flag">🇰🇷</span>
+            <div>
+              <div class="insight-headline">South Korea shows the largest gap</div>
+              <div class="insight-body">Its 2019 benchmark band stretches to 673K but 2025 arrivals sit at only 463K — the widest shortfall visible across both bullet charts, suggesting structural shifts in Korean outbound travel that have yet to reverse.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 02 HOW THEY ARRIVE & WHERE THEY STAY ═══ -->
+  <section class="section" id="sec-transport">
+    <div class="section-header">
+      <div>
+        <p class="section-num">02 · Arrival Routes</p>
+        <h2 class="section-title">How Do Tourists Arrive — and Where Do They Stay?</h2>
+        <p class="section-subtitle">Arrival patterns reveal how Malaysia's tourism recovery is shaped by border access, flight connectivity, and destination geography.</p>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <p class="card-title">Land Travel Drives the Largest Arrival Volume</p>
+        <p class="card-subtitle">2019 · 2023 · 2024 comparison</p>
+        <div class="chart-wrap" id="chart-transport"></div>
+      </div>
+      <div class="card">
+        <p class="card-title">Most Tourists Enter Malaysia by Land</p>
+        <p class="card-subtitle">Each square = 1% of total 37.9 million arrivals</p>
+        <div class="waffle-container">
+          <div id="waffle-grid"></div>
+          <div class="legend-row" id="waffle-legend"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <p class="card-title">Hotel Guests Cluster Around Key Tourism States</p>
+        <p class="card-subtitle">Darker = more guests · Hover for full state stats</p>
+        <div class="chart-wrap" id="chart-map"></div>
+      </div>
+      <div class="card">
+        <p class="card-title">States Depend on Domestic and Foreign Guests Differently</p>
+        <p class="card-subtitle">Normalised 100% · States sorted by total guests</p>
+        <div class="chart-wrap" id="chart-stacked"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 04 HOTEL SUPPLY ═══ -->
+  <section class="section" id="sec-hotels">
+    <div class="section-header">
+      <div>
+        <p class="section-num">03 · Hotel Supply</p>
+        <h2 class="section-title">Is Hotel Supply Keeping Pace with Demand?</h2>
+        <p class="section-subtitle">Comparing hotel rooms, establishments, and occupancy helps reveal where supply pressure may be emerging.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:24px;">
+      <p class="card-title">Hotel Capacity Is Concentrated in a Few States</p>
+      <div class="bullet-legend-inline">
+        <svg width="220" height="18" viewBox="0 0 220 18" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+          <rect x="0" y="4" width="20" height="8" rx="2" fill="#1B5E6E"/>
+          <text x="24" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">more rooms</text>
+          <circle cx="116" cy="9" r="5" fill="#C85A3A"/>
+          <text x="124" y="13" font-family="DM Sans,sans-serif" font-size="10" fill="#999">occupancy rate</text>
+        </svg>
+      </div>
+      <div class="chart-wrap" id="chart-supply-ladder"></div>
+    </div>
+    <div class="card" style="margin-bottom:24px;">
+      <p class="card-title">High Occupancy with Limited Rooms Signals Supply Pressure</p>
+      <p class="card-subtitle">Rooms on x-axis · Occupancy on y-axis · Bubble size = total guests 2025 · Hover for details</p>
+      <div class="matrix-filter" id="matrix-filter">
+        <span class="filter-label">Show states:</span>
+        <button class="matrix-btn active" data-state="all">All states</button>
+        <button class="matrix-btn" data-state="top5">High demand</button>
+        <button class="matrix-btn" data-state="top7">Major gateways</button>
+        <button class="matrix-btn" data-state="bottom6">Smaller markets</button>
+      </div>
+      <div class="chart-wrap" id="chart-pressure-matrix"></div>
+    </div>
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 05 OCCUPANCY ═══ -->
+  <section class="section" id="sec-occupancy">
+    <div class="section-header">
+      <div>
+        <p class="section-num">04 · Occupancy Patterns</p>
+        <h2 class="section-title">When and Where Are Hotels Busiest?</h2>
+        <p class="section-subtitle">Monthly occupancy patterns reveal seasonal pressure and state-level differences in hotel demand.</p>
+      </div>
+    </div>
+
+    <div class="grid-3-2" style="align-items:stretch;">
+      <div class="card">
+        <p class="card-title">Year-End Occupancy Peaks Across Several States</p>
+        <p class="card-subtitle">Darker teal = higher occupancy · States sorted by full-year average</p>
+        <div class="chart-wrap" id="chart-heatmap"></div>
+      </div>
+      <div class="card heatmap-insight-card">
+        <p class="card-title" style="margin-bottom:20px;">🔍 How to Read the Pattern</p>
+
+<div class="heatmap-insight-entry">
+          <div class="heatmap-insight-icon">🌧️</div>
+          <div>
+            <div class="heatmap-insight-headline">East coast peaks during holiday months</div>
+            <div class="heatmap-insight-body">Terengganu drops from 53% in Oct to 35% in Dec; Kelantan from 47% to 30%. Meanwhile Pulau Pinang, Selangor and Johor stay stable or darken — a sharp east–west divide driven by the Northeast Monsoon (Nov–Jan).</div>
+          </div>
+        </div>
+
+        <div class="heatmap-insight-entry" style="border-bottom:none;">
+          <div class="heatmap-insight-icon">🎄</div>
+          <div>
+            <div class="heatmap-insight-headline">West coast demand stays more stable</div>
+            <div class="heatmap-insight-body">Johor, Pulau Pinang and Putrajaya all show noticeably darker December cells versus November — year-end holidays and school breaks drive a broad west-coast rebound just as the east coast reaches its seasonal low.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ 06 REVENUE & GROWTH ═══ -->
+  <section class="section" id="sec-revenue">
+    <div class="section-header">
+      <div>
+        <p class="section-num">05 · Revenue Resilience</p>
+        <h2 class="section-title">Is Malaysia's Tourism Recovery Resilient?</h2>
+        <p class="section-subtitle">Revenue and arrivals have recovered, but the pace of recovery shows where Malaysia's tourism economy remains exposed.</p>
+      </div>
+    </div>
+
+    <div class="grid-2" style="align-items:start;">
+      <div class="card">
+        <p class="card-title">Tourism Revenue Has Rebounded, but Recovery Took Time</p>
+        <p class="card-subtitle">Area categorized into three phases: Normal, Vulnerability, Recovery</p>
+        <div class="chart-wrap" id="chart-revenue"></div>
+      </div>
+      <div class="card">
+        <p class="card-title">Arrivals Recovering, but the 2019 Baseline Took Years to Recross</p>
+        <p class="card-subtitle">Red bars = COVID collapse years (2020–2021) · Hover for exact figures</p>
+        <div class="chart-wrap" id="chart-arrivals-annual"></div>
+      </div>
+    </div>
+
+    <div class="card narrative-card" style="margin-top:24px;">
+      <div class="narrative-inner">
+        <div class="narrative-icon">💡</div>
+        <div class="narrative-text-block">
+          <p class="narrative-heading">Fragile by Nature, Resilient by Demand</p>
+          <p class="narrative-body">Both crises and travel restrictions can sharply reduce arrivals and revenue. Yet Malaysia's recovery shows that demand remains strong, especially from nearby markets. The challenge now is to turn returning visitors into more resilient, higher-value tourism growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <strong>Malaysia Tourism: Where the World Comes to Stay</strong><br>
+  Data sources: Tourism Malaysia · Department of Statistics Malaysia · Ministry of Tourism, Arts and Culture Malaysia<br>
+  Created by Nicholas Wong · FIT2179 Data Visualisation 2 · Monash University Malaysia · 2026
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
