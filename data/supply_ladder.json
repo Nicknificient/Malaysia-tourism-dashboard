@@ -1,0 +1,80 @@
+[
+  {
+    "State": "Kuala Lumpur",
+    "Rooms": 66133,
+    "AOR": 66.9,
+    "Total_2025": 23737416
+  },
+  {
+    "State": "Johor",
+    "Rooms": 35799,
+    "AOR": 54.2,
+    "Total_2025": 10633254
+  },
+  {
+    "State": "Selangor",
+    "Rooms": 35066,
+    "AOR": 54.8,
+    "Total_2025": 9911317
+  },
+  {
+    "State": "Pahang",
+    "Rooms": 34401,
+    "AOR": 76.3,
+    "Total_2025": 12964592
+  },
+  {
+    "State": "Sarawak",
+    "Rooms": 28236,
+    "AOR": 47.3,
+    "Total_2025": 6983007
+  },
+  {
+    "State": "Pulau Pinang",
+    "Rooms": 28045,
+    "AOR": 58.6,
+    "Total_2025": 8766112
+  },
+  {
+    "State": "Sabah",
+    "Rooms": 27254,
+    "AOR": 54.1,
+    "Total_2025": 7346031
+  },
+  {
+    "State": "Melaka",
+    "Rooms": 20655,
+    "AOR": 46.1,
+    "Total_2025": 5139050
+  },
+  {
+    "State": "Perak",
+    "Rooms": 19572,
+    "AOR": 46.4,
+    "Total_2025": 5236469
+  },
+  {
+    "State": "Kedah",
+    "Rooms": 18679,
+    "AOR": 50.9,
+    "Total_2025": 5231204
+  },
+  {
+    "State": "Negeri Sembilan",
+    "Rooms": 11527,
+    "AOR": 44.2,
+    "Total_2025": 2651520
+  },
+  {
+    "State": "Terengganu",
+    "Rooms": 11314,
+    "AOR": 45.6,
+    "Total_2025": 2691741
+  },
+  {
+    "State": "Perlis",
+    "Rooms": 1553,
+    "AOR": 41.7,
+    "Total_2025": 333218
+  }
+]

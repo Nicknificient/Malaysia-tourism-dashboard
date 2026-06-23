@@ -1,0 +1,56 @@
+[
+  {
+    "rank": 1,
+    "Country": "SINGAPORE",
+    "Arrivals_2025": 9344513,
+    "Arrivals_2024": 9099727,
+    "Arrivals_2019": 10163882,
+    "Growth_2025_vs_2019": -8.1,
+    "Region": "ASEAN"
+  },
+  {
+    "rank": 2,
+    "Country": "CHINA",
+    "Arrivals_2025": 3965140,
+    "Arrivals_2024": 3287362,
+    "Arrivals_2019": 3114257,
+    "Growth_2025_vs_2019": 27.3,
+    "Region": "Asia"
+  },
+  {
+    "rank": 3,
+    "Country": "INDONESIA",
+    "Arrivals_2025": 3755129,
+    "Arrivals_2024": 3651668,
+    "Arrivals_2019": 3623277,
+    "Growth_2025_vs_2019": 3.6,
+    "Region": "ASEAN"
+  },
+  {
+    "rank": 4,
+    "Country": "THAILAND",
+    "Arrivals_2025": 1720970,
+    "Arrivals_2024": 1639211,
+    "Arrivals_2019": 1884306,
+    "Growth_2025_vs_2019": -8.7,
+    "Region": "ASEAN"
+  },
+  {
+    "rank": 5,
+    "Country": "INDIA",
+    "Arrivals_2025": 1244969,
+    "Arrivals_2024": 1133331,
+    "Arrivals_2019": 735309,
+    "Growth_2025_vs_2019": 69.3,
+    "Region": "Asia"
+  },
+  {
+    "rank": 6,
+    "Country": "BRUNEI",
+    "Arrivals_2025": 1029048,
+    "Arrivals_2024": 1142134,
+    "Arrivals_2019": 1216123,
+    "Growth_2025_vs_2019": -15.4,
+    "Region": "ASEAN"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "Region": "ASEAN",
+    "Arrivals_2025": 16812864,
+    "Arrivals_2024": 16461242,
+    "Arrivals_2019": 17880151,
+    "Growth_vs_2019": -6.0
+  },
+  {
+    "Region": "Asia",
+    "Arrivals_2025": 7113804,
+    "Arrivals_2024": 6120743,
+    "Arrivals_2019": 5800332,
+    "Growth_vs_2019": 22.6
+  },
+  {
+    "Region": "Europe",
+    "Arrivals_2025": 1228642,
+    "Arrivals_2024": 1077686,
+    "Arrivals_2019": 991073,
+    "Growth_vs_2019": 24.0
+  },
+  {
+    "Region": "Oceania",
+    "Arrivals_2025": 472512,
+    "Arrivals_2024": 430589,
+    "Arrivals_2019": 418411,
+    "Growth_vs_2019": 12.9
+  },
+  {
+    "Region": "Americas",
+    "Arrivals_2025": 389650,
+    "Arrivals_2024": 358691,
+    "Arrivals_2019": 357496,
+    "Growth_vs_2019": 9.0
+  },
+  {
+    "Region": "Middle East",
+    "Arrivals_2025": 128591,
+    "Arrivals_2024": 139665,
+    "Arrivals_2019": 228598,
+    "Growth_vs_2019": -43.7
+  },
+  {
+    "Region": "Africa",
+    "Arrivals_2025": 62602,
+    "Arrivals_2024": 60986,
+    "Arrivals_2019": 69883,
+    "Growth_vs_2019": -10.4
+  }
+]

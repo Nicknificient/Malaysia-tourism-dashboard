@@ -1,0 +1,83 @@
+[
+  {
+    "rank": 7,
+    "Country": "SOUTH KOREA",
+    "Arrivals_2025": 463504,
+    "Arrivals_2024": 475815,
+    "Arrivals_2019": 673065,
+    "Growth_2025_vs_2019": -31.1,
+    "Region": "Asia"
+  },
+  {
+    "rank": 8,
+    "Country": "AUSTRALIA",
+    "Arrivals_2025": 420684,
+    "Arrivals_2024": 382628,
+    "Arrivals_2019": 368271,
+    "Growth_2025_vs_2019": 14.2,
+    "Region": "Oceania"
+  },
+  {
+    "rank": 9,
+    "Country": "PHILIPPINES",
+    "Arrivals_2025": 416595,
+    "Arrivals_2024": 400912,
+    "Arrivals_2019": 421908,
+    "Growth_2025_vs_2019": -1.3,
+    "Region": "ASEAN"
+  },
+  {
+    "rank": 10,
+    "Country": "CHINESE TAIPEI",
+    "Arrivals_2025": 400067,
+    "Arrivals_2024": 385415,
+    "Arrivals_2019": 382916,
+    "Growth_2025_vs_2019": 4.5,
+    "Region": "Asia"
+  },
+  {
+    "rank": 11,
+    "Country": "UNITED KINGDOM",
+    "Arrivals_2025": 376800,
+    "Arrivals_2024": 345438,
+    "Arrivals_2019": 346485,
+    "Growth_2025_vs_2019": 8.7,
+    "Region": "Europe"
+  },
+  {
+    "rank": 12,
+    "Country": "JAPAN",
+    "Arrivals_2025": 344030,
+    "Arrivals_2024": 307883,
+    "Arrivals_2019": 424694,
+    "Growth_2025_vs_2019": -19.0,
+    "Region": "Asia"
+  },
+  {
+    "rank": 13,
+    "Country": "U.S.A",
+    "Arrivals_2025": 291765,
+    "Arrivals_2024": 271809,
+    "Arrivals_2019": 269928,
+    "Growth_2025_vs_2019": 8.1,
+    "Region": "Americas"
+  },
+  {
+    "rank": 14,
+    "Country": "VIETNAM",
+    "Arrivals_2025": 285865,
+    "Arrivals_2024": 330189,
+    "Arrivals_2019": 400346,
+    "Growth_2025_vs_2019": -28.6,
+    "Region": "ASEAN"
+  },
+  {
+    "rank": 15,
+    "Country": "BANGLADESH",
+    "Arrivals_2025": 252301,
+    "Arrivals_2024": 143919,
+    "Arrivals_2019": 179000,
+    "Growth_2025_vs_2019": 41.0,
+    "Region": "Asia"
+  }
+]

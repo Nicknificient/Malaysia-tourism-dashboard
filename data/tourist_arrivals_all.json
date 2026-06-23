@@ -1,0 +1,410 @@
+[
+  {
+    "Country": "SINGAPORE",
+    "Arrivals_2025": 9344513,
+    "Arrivals_2024": 9099727,
+    "Arrivals_2019": 10163882,
+    "Growth_2025_vs_2019": -8.1,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "INDONESIA",
+    "Arrivals_2025": 3755129,
+    "Arrivals_2024": 3651668,
+    "Arrivals_2019": 3623277,
+    "Growth_2025_vs_2019": 3.6,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "CHINA",
+    "Arrivals_2025": 3965140,
+    "Arrivals_2024": 3287362,
+    "Arrivals_2019": 3114257,
+    "Growth_2025_vs_2019": 27.3,
+    "Region": "Asia"
+  },
+  {
+    "Country": "THAILAND",
+    "Arrivals_2025": 1720970,
+    "Arrivals_2024": 1639211,
+    "Arrivals_2019": 1884306,
+    "Growth_2025_vs_2019": -8.7,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "BRUNEI",
+    "Arrivals_2025": 1029048,
+    "Arrivals_2024": 1142134,
+    "Arrivals_2019": 1216123,
+    "Growth_2025_vs_2019": -15.4,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "INDIA",
+    "Arrivals_2025": 1244969,
+    "Arrivals_2024": 1133331,
+    "Arrivals_2019": 735309,
+    "Growth_2025_vs_2019": 69.3,
+    "Region": "Asia"
+  },
+  {
+    "Country": "AUSTRALIA",
+    "Arrivals_2025": 420684,
+    "Arrivals_2024": 382628,
+    "Arrivals_2019": 368271,
+    "Growth_2025_vs_2019": 14.2,
+    "Region": "Oceania"
+  },
+  {
+    "Country": "PHILIPPINES",
+    "Arrivals_2025": 416595,
+    "Arrivals_2024": 400912,
+    "Arrivals_2019": 421908,
+    "Growth_2025_vs_2019": -1.3,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "SOUTH KOREA",
+    "Arrivals_2025": 463504,
+    "Arrivals_2024": 475815,
+    "Arrivals_2019": 673065,
+    "Growth_2025_vs_2019": -31.1,
+    "Region": "Asia"
+  },
+  {
+    "Country": "UNITED KINGDOM",
+    "Arrivals_2025": 376800,
+    "Arrivals_2024": 345438,
+    "Arrivals_2019": 346485,
+    "Growth_2025_vs_2019": 8.7,
+    "Region": "Europe"
+  },
+  {
+    "Country": "U.S.A",
+    "Arrivals_2025": 291765,
+    "Arrivals_2024": 271809,
+    "Arrivals_2019": 269928,
+    "Growth_2025_vs_2019": 8.1,
+    "Region": "Americas"
+  },
+  {
+    "Country": "JAPAN",
+    "Arrivals_2025": 344030,
+    "Arrivals_2024": 307883,
+    "Arrivals_2019": 424694,
+    "Growth_2025_vs_2019": -19.0,
+    "Region": "Asia"
+  },
+  {
+    "Country": "MYANMAR",
+    "Arrivals_2025": 170238,
+    "Arrivals_2024": 114551,
+    "Arrivals_2019": 46257,
+    "Growth_2025_vs_2019": 268.0,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "CHINESE TAIPEI",
+    "Arrivals_2025": 400067,
+    "Arrivals_2024": 385415,
+    "Arrivals_2019": 382916,
+    "Growth_2025_vs_2019": 4.5,
+    "Region": "Asia"
+  },
+  {
+    "Country": "GERMANY",
+    "Arrivals_2025": 172852,
+    "Arrivals_2024": 155848,
+    "Arrivals_2019": 130221,
+    "Growth_2025_vs_2019": 32.7,
+    "Region": "Europe"
+  },
+  {
+    "Country": "BANGLADESH",
+    "Arrivals_2025": 252301,
+    "Arrivals_2024": 143919,
+    "Arrivals_2019": 179000,
+    "Growth_2025_vs_2019": 41.0,
+    "Region": "Asia"
+  },
+  {
+    "Country": "VIETNAM",
+    "Arrivals_2025": 285865,
+    "Arrivals_2024": 330189,
+    "Arrivals_2019": 400346,
+    "Growth_2025_vs_2019": -28.6,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "RUSSIA",
+    "Arrivals_2025": 121734,
+    "Arrivals_2024": 112806,
+    "Arrivals_2019": 79984,
+    "Growth_2025_vs_2019": 52.2,
+    "Region": "Asia"
+  },
+  {
+    "Country": "FRANCE",
+    "Arrivals_2025": 199416,
+    "Arrivals_2024": 160637,
+    "Arrivals_2019": 141661,
+    "Growth_2025_vs_2019": 40.8,
+    "Region": "Europe"
+  },
+  {
+    "Country": "CANADA",
+    "Arrivals_2025": 97885,
+    "Arrivals_2024": 86882,
+    "Arrivals_2019": 87568,
+    "Growth_2025_vs_2019": 11.8,
+    "Region": "Americas"
+  },
+  {
+    "Country": "PAKISTAN",
+    "Arrivals_2025": 129493,
+    "Arrivals_2024": 102570,
+    "Arrivals_2019": 105757,
+    "Growth_2025_vs_2019": 22.4,
+    "Region": "Asia"
+  },
+  {
+    "Country": "SRI LANKA",
+    "Arrivals_2025": 70084,
+    "Arrivals_2024": 58015,
+    "Arrivals_2019": 26058,
+    "Growth_2025_vs_2019": 169.0,
+    "Region": "Asia"
+  },
+  {
+    "Country": "CAMBODIA",
+    "Arrivals_2025": 65539,
+    "Arrivals_2024": 63964,
+    "Arrivals_2019": 97097,
+    "Growth_2025_vs_2019": -32.5,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "NEW ZEALAND",
+    "Arrivals_2025": 51828,
+    "Arrivals_2024": 47961,
+    "Arrivals_2019": 50140,
+    "Growth_2025_vs_2019": 3.4,
+    "Region": "Oceania"
+  },
+  {
+    "Country": "NETHERLANDS",
+    "Arrivals_2025": 88439,
+    "Arrivals_2024": 82964,
+    "Arrivals_2019": 82110,
+    "Growth_2025_vs_2019": 7.7,
+    "Region": "Europe"
+  },
+  {
+    "Country": "ITALY",
+    "Arrivals_2025": 78830,
+    "Arrivals_2024": 69781,
+    "Arrivals_2019": 54710,
+    "Growth_2025_vs_2019": 44.1,
+    "Region": "Europe"
+  },
+  {
+    "Country": "MALDIVES",
+    "Arrivals_2025": 40379,
+    "Arrivals_2024": 39634,
+    "Arrivals_2019": 27403,
+    "Growth_2025_vs_2019": 47.4,
+    "Region": "Asia"
+  },
+  {
+    "Country": "POLAND",
+    "Arrivals_2025": 48186,
+    "Arrivals_2024": 36821,
+    "Arrivals_2019": 27033,
+    "Growth_2025_vs_2019": 78.2,
+    "Region": "Europe"
+  },
+  {
+    "Country": "SPAIN",
+    "Arrivals_2025": 79675,
+    "Arrivals_2024": 60527,
+    "Arrivals_2019": 43616,
+    "Growth_2025_vs_2019": 82.7,
+    "Region": "Europe"
+  },
+  {
+    "Country": "MAURITIUS",
+    "Arrivals_2025": 21645,
+    "Arrivals_2024": 21148,
+    "Arrivals_2019": 17378,
+    "Growth_2025_vs_2019": 24.6,
+    "Region": "Africa"
+  },
+  {
+    "Country": "SOUTH AFRICA",
+    "Arrivals_2025": 18114,
+    "Arrivals_2024": 16979,
+    "Arrivals_2019": 22674,
+    "Growth_2025_vs_2019": -20.1,
+    "Region": "Africa"
+  },
+  {
+    "Country": "SWEDEN",
+    "Arrivals_2025": 22647,
+    "Arrivals_2024": 21242,
+    "Arrivals_2019": 29592,
+    "Growth_2025_vs_2019": -23.5,
+    "Region": "Europe"
+  },
+  {
+    "Country": "SWITZERLAND",
+    "Arrivals_2025": 32499,
+    "Arrivals_2024": 28035,
+    "Arrivals_2019": 25659,
+    "Growth_2025_vs_2019": 26.7,
+    "Region": "Europe"
+  },
+  {
+    "Country": "KAZAKHSTAN",
+    "Arrivals_2025": 33895,
+    "Arrivals_2024": 30730,
+    "Arrivals_2019": 18138,
+    "Growth_2025_vs_2019": 86.9,
+    "Region": "Asia"
+  },
+  {
+    "Country": "UZBEKISTAN",
+    "Arrivals_2025": 17947,
+    "Arrivals_2024": 16309,
+    "Arrivals_2019": 12031,
+    "Growth_2025_vs_2019": 49.2,
+    "Region": "Asia"
+  },
+  {
+    "Country": "TURKIYE",
+    "Arrivals_2025": 32148,
+    "Arrivals_2024": 23986,
+    "Arrivals_2019": 15290,
+    "Growth_2025_vs_2019": 110.3,
+    "Region": "Europe"
+  },
+  {
+    "Country": "SAUDI ARABIA",
+    "Arrivals_2025": 55176,
+    "Arrivals_2024": 62764,
+    "Arrivals_2019": 121444,
+    "Growth_2025_vs_2019": -54.6,
+    "Region": "Middle East"
+  },
+  {
+    "Country": "LAOS",
+    "Arrivals_2025": 24967,
+    "Arrivals_2024": 18886,
+    "Arrivals_2019": 26955,
+    "Growth_2025_vs_2019": -7.4,
+    "Region": "ASEAN"
+  },
+  {
+    "Country": "IRELAND",
+    "Arrivals_2025": 22946,
+    "Arrivals_2024": 21170,
+    "Arrivals_2019": 19696,
+    "Growth_2025_vs_2019": 16.5,
+    "Region": "Europe"
+  },
+  {
+    "Country": "DENMARK",
+    "Arrivals_2025": 19837,
+    "Arrivals_2024": 19242,
+    "Arrivals_2019": 22314,
+    "Growth_2025_vs_2019": -11.1,
+    "Region": "Europe"
+  },
+  {
+    "Country": "BELGIUM",
+    "Arrivals_2025": 27124,
+    "Arrivals_2024": 25234,
+    "Arrivals_2019": 22082,
+    "Growth_2025_vs_2019": 22.8,
+    "Region": "Europe"
+  },
+  {
+    "Country": "EGYPT",
+    "Arrivals_2025": 22843,
+    "Arrivals_2024": 22859,
+    "Arrivals_2019": 29831,
+    "Growth_2025_vs_2019": -23.4,
+    "Region": "Africa"
+  },
+  {
+    "Country": "IRAN",
+    "Arrivals_2025": 19137,
+    "Arrivals_2024": 24710,
+    "Arrivals_2019": 46559,
+    "Growth_2025_vs_2019": -58.9,
+    "Region": "Middle East"
+  },
+  {
+    "Country": "UKRAINE",
+    "Arrivals_2025": 14097,
+    "Arrivals_2024": 13511,
+    "Arrivals_2019": 16019,
+    "Growth_2025_vs_2019": -12.0,
+    "Region": "Europe"
+  },
+  {
+    "Country": "NEPAL",
+    "Arrivals_2025": 21472,
+    "Arrivals_2024": 20091,
+    "Arrivals_2019": 20437,
+    "Growth_2025_vs_2019": 5.1,
+    "Region": "Asia"
+  },
+  {
+    "Country": "IRAQ",
+    "Arrivals_2025": 18954,
+    "Arrivals_2024": 18884,
+    "Arrivals_2019": 21421,
+    "Growth_2025_vs_2019": -11.5,
+    "Region": "Middle East"
+  },
+  {
+    "Country": "NORWAY",
+    "Arrivals_2025": 13146,
+    "Arrivals_2024": 13250,
+    "Arrivals_2019": 14585,
+    "Growth_2025_vs_2019": -9.9,
+    "Region": "Europe"
+  },
+  {
+    "Country": "OMAN",
+    "Arrivals_2025": 25158,
+    "Arrivals_2024": 24072,
+    "Arrivals_2019": 23911,
+    "Growth_2025_vs_2019": 5.2,
+    "Region": "Middle East"
+  },
+  {
+    "Country": "UAE",
+    "Arrivals_2025": 7457,
+    "Arrivals_2024": 6836,
+    "Arrivals_2019": 11174,
+    "Growth_2025_vs_2019": -33.3,
+    "Region": "Middle East"
+  },
+  {
+    "Country": "TURKMENISTAN",
+    "Arrivals_2025": 8789,
+    "Arrivals_2024": 6863,
+    "Arrivals_2019": 1283,
+    "Growth_2025_vs_2019": 585.0,
+    "Region": "Asia"
+  },
+  {
+    "Country": "QATAR",
+    "Arrivals_2025": 2709,
+    "Arrivals_2024": 2399,
+    "Arrivals_2019": 4089,
+    "Growth_2025_vs_2019": -33.7,
+    "Region": "Middle East"
+  }
+]
