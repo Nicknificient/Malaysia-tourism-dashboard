@@ -2,9 +2,13 @@
 
 An interactive data visualisation dashboard exploring Malaysia's tourism recovery through visitor markets, arrival routes, hotel guest distribution, hotel supply, occupancy patterns, and tourism revenue resilience.
 
-Built for **FIT2179 Data Visualisation 2** (Monash University) using **Vega-Lite**, hand-built SVG, and vanilla HTML/CSS/JavaScript — **graded 21.33/25 (HD)**.
+Built for **FIT2179 Data Visualisation 2** (Monash University) using **Vega-Lite**, hand-built SVG, and vanilla HTML/CSS/JavaScript.
 
 **[Live Dashboard →](https://nicknificient.github.io/FIT2179-DV2-Malaysia-Tourism/)**
+
+![Dashboard preview — hero section and Visitor Markets](./assets/preview.png)
+
+*Full-page screenshot: [`assets/full-dashboard.png`](./assets/full-dashboard.png)*
 
 ---
 
@@ -126,6 +130,6 @@ Public tourism datasets combined from multiple Malaysian government and tourism 
 
 ---
 
-## Outcome
+## Skills Demonstrated
 
-Graded **21.33 / 25 (HD)** under FIT2179's Data Visualisation 2 rubric, which assesses idiom complexity, layout/colour/figure-ground, typography, storytelling, and domain framing.
+This project combines declarative charting with hand-built visualisation engineering: reading and combining real-world public datasets, choosing idioms to match the analytical question rather than defaulting to standard charts, building custom SVG renderers where no existing idiom fit, wiring Vega-Lite's reactive signal graph to plain DOM controls, and applying a consistent design system (colour, typography, layout) across both declarative and hand-built chart output.
