@@ -1,0 +1,1503 @@
+{
+  "arrivals_bar_top6": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "data/arrivals_top6.json"
+    },
+    "width": "container",
+    "height": 310,
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "height": 22,
+          "color": "#C9B27E",
+          "opacity": 0.45,
+          "cornerRadiusTopRight": 3,
+          "cornerRadiusBottomRight": 3
+        },
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {
+              "field": "rank",
+              "order": "ascending"
+            },
+            "axis": {
+              "labelFontSize": 11,
+              "titleFontSize": 0,
+              "labelLimit": 150
+            }
+          },
+          "x": {
+            "field": "Arrivals_2019",
+            "type": "quantitative",
+            "axis": {
+              "format": ",.0f",
+              "labelFontSize": 10,
+              "title": "Arrivals",
+              "titleFontSize": 11,
+              "grid": true,
+              "gridColor": "#EEE9E1"
+            }
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "bar",
+          "height": 12,
+          "color": "#176B73",
+          "cornerRadiusTopRight": 3,
+          "cornerRadiusBottomRight": 3
+        },
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {
+              "field": "rank",
+              "order": "ascending"
+            }
+          },
+          "x": {
+            "field": "Arrivals_2025",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "#D96B4C",
+          "strokeWidth": 2.5,
+          "size": 20
+        },
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {
+              "field": "rank",
+              "order": "ascending"
+            }
+          },
+          "x": {
+            "field": "Arrivals_2024",
+            "type": "quantitative"
+          }
+        }
+      }
+    ],
+    "encoding": {
+      "tooltip": [
+        {
+          "field": "Country",
+          "title": "Country"
+        },
+        {
+          "field": "Arrivals_2025",
+          "title": "Arrivals 2025",
+          "format": ",.0f"
+        },
+        {
+          "field": "Arrivals_2024",
+          "title": "Arrivals 2024",
+          "format": ",.0f"
+        },
+        {
+          "field": "Arrivals_2019",
+          "title": "Arrivals 2019 (benchmark)",
+          "format": ",.0f"
+        },
+        {
+          "field": "Growth_2025_vs_2019",
+          "title": "Growth vs 2019 (%)",
+          "format": ".1f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "arrivals_bar_7to15": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "data/arrivals_7to15.json"
+    },
+    "width": "container",
+    "height": 310,
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "height": 22,
+          "color": "#C9B27E",
+          "opacity": 0.45,
+          "cornerRadiusTopRight": 3,
+          "cornerRadiusBottomRight": 3
+        },
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {
+              "field": "rank",
+              "order": "ascending"
+            },
+            "axis": {
+              "labelFontSize": 11,
+              "titleFontSize": 0,
+              "labelLimit": 150
+            }
+          },
+          "x": {
+            "field": "Arrivals_2019",
+            "type": "quantitative",
+            "axis": {
+              "format": ",.0f",
+              "labelFontSize": 10,
+              "title": "Arrivals",
+              "titleFontSize": 11,
+              "grid": true,
+              "gridColor": "#EEE9E1"
+            }
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "bar",
+          "height": 12,
+          "color": "#3A8C96",
+          "cornerRadiusTopRight": 3,
+          "cornerRadiusBottomRight": 3
+        },
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {
+              "field": "rank",
+              "order": "ascending"
+            }
+          },
+          "x": {
+            "field": "Arrivals_2025",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "#D96B4C",
+          "strokeWidth": 2.5,
+          "size": 20
+        },
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {
+              "field": "rank",
+              "order": "ascending"
+            }
+          },
+          "x": {
+            "field": "Arrivals_2024",
+            "type": "quantitative"
+          }
+        }
+      }
+    ],
+    "encoding": {
+      "tooltip": [
+        {
+          "field": "Country",
+          "title": "Country"
+        },
+        {
+          "field": "Arrivals_2025",
+          "title": "Arrivals 2025",
+          "format": ",.0f"
+        },
+        {
+          "field": "Arrivals_2024",
+          "title": "Arrivals 2024",
+          "format": ",.0f"
+        },
+        {
+          "field": "Arrivals_2019",
+          "title": "Arrivals 2019 (benchmark)",
+          "format": ",.0f"
+        },
+        {
+          "field": "Growth_2025_vs_2019",
+          "title": "Growth vs 2019 (%)",
+          "format": ".1f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "transport_bar": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Mode of Transport 2024",
+    "data": {
+      "url": "data/transport_mode.json"
+    },
+    "width": "container",
+    "height": 240,
+    "transform": [
+      {
+        "fold": [
+          "y2024",
+          "y2023",
+          "y2019"
+        ],
+        "as": [
+          "year_key",
+          "arrivals"
+        ]
+      },
+      {
+        "calculate": "datum.year_key === 'y2024' ? '2024' : datum.year_key === 'y2023' ? '2023' : '2019'",
+        "as": "Year"
+      }
+    ],
+    "mark": {
+      "type": "bar",
+      "cornerRadiusTopLeft": 3,
+      "cornerRadiusTopRight": 3
+    },
+    "encoding": {
+      "x": {
+        "field": "mode",
+        "type": "nominal",
+        "sort": [
+          "-y2024"
+        ],
+        "axis": {
+          "labelAngle": 0,
+          "labelFontSize": 11,
+          "titleFontSize": 0,
+          "title": null
+        }
+      },
+      "y": {
+        "field": "arrivals",
+        "type": "quantitative",
+        "axis": {
+          "format": ",.0f",
+          "labelFontSize": 10,
+          "title": "Arrivals",
+          "titleFontSize": 11,
+          "grid": true,
+          "gridColor": "#EEE9E1"
+        }
+      },
+      "xOffset": {
+        "field": "Year",
+        "type": "nominal"
+      },
+      "color": {
+        "field": "Year",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "2019",
+            "2023",
+            "2024"
+          ],
+          "range": [
+            "#999999",
+            "#0072B2",
+            "#E69F00"
+          ]
+        },
+        "legend": {
+          "orient": "top",
+          "labelFontSize": 11,
+          "title": null
+        }
+      },
+      "tooltip": [
+        {
+          "field": "mode",
+          "title": "Mode"
+        },
+        {
+          "field": "Year",
+          "title": "Year"
+        },
+        {
+          "field": "arrivals",
+          "title": "Arrivals",
+          "format": ",.0f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "scatter_rooms_aor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Hotel Rooms vs Occupancy Rate",
+    "data": {
+      "url": "data/state_merged.json"
+    },
+    "width": "container",
+    "height": 280,
+    "mark": {
+      "type": "point",
+      "filled": true,
+      "color": "#176B73",
+      "opacity": 0.8,
+      "stroke": "white",
+      "strokeWidth": 1.5
+    },
+    "encoding": {
+      "x": {
+        "field": "Rooms",
+        "type": "quantitative",
+        "axis": {
+          "title": "Total Hotel Rooms",
+          "labelFontSize": 10,
+          "titleFontSize": 11,
+          "grid": true,
+          "gridColor": "#EEE9E1",
+          "format": ",.0f"
+        }
+      },
+      "y": {
+        "field": "AOR_Jan_Dec",
+        "type": "quantitative",
+        "axis": {
+          "title": "Average Occupancy Rate (%)",
+          "labelFontSize": 10,
+          "titleFontSize": 11,
+          "grid": true,
+          "gridColor": "#EEE9E1"
+        }
+      },
+      "size": {
+        "field": "Total_2025",
+        "type": "quantitative",
+        "scale": {
+          "range": [
+            60,
+            600
+          ]
+        },
+        "legend": {
+          "title": "Total Guests 2025",
+          "labelFontSize": 10,
+          "titleFontSize": 10,
+          "orient": "right",
+          "gradientLength": 120
+        }
+      },
+      "tooltip": [
+        {
+          "field": "State",
+          "title": "State"
+        },
+        {
+          "field": "Rooms",
+          "title": "Rooms",
+          "format": ",.0f"
+        },
+        {
+          "field": "AOR_Jan_Dec",
+          "title": "AOR (%)",
+          "format": ".1f"
+        },
+        {
+          "field": "Total_2025",
+          "title": "Guests 2025",
+          "format": ",.0f"
+        },
+        {
+          "field": "foreign_pct",
+          "title": "Foreign Guest %",
+          "format": ".1f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "stacked_guests": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Domestic vs Foreign Guests by State 2025",
+    "data": {
+      "url": "data/hotel_guests.json"
+    },
+    "width": "container",
+    "height": 340,
+    "transform": [
+      {
+        "fold": [
+          "Domestic_2025",
+          "Foreign_2025"
+        ],
+        "as": [
+          "Guest_Type",
+          "Count"
+        ]
+      },
+      {
+        "calculate": "datum.Guest_Type === 'Domestic_2025' ? 'Domestic' : 'Foreign'",
+        "as": "Type"
+      }
+    ],
+    "mark": {
+      "type": "bar"
+    },
+    "encoding": {
+      "y": {
+        "field": "State",
+        "type": "nominal",
+        "sort": {
+          "field": "Total_2025",
+          "order": "descending"
+        },
+        "axis": {
+          "labelFontSize": 11,
+          "titleFontSize": 0
+        }
+      },
+      "x": {
+        "field": "Count",
+        "type": "quantitative",
+        "stack": "normalize",
+        "axis": {
+          "format": "%",
+          "labelFontSize": 10,
+          "title": "Share of Guests",
+          "titleFontSize": 11,
+          "grid": true,
+          "gridColor": "#EEE9E1"
+        }
+      },
+      "color": {
+        "field": "Type",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Domestic",
+            "Foreign"
+          ],
+          "range": [
+            "#7A7A7A",
+            "#66A182"
+          ]
+        },
+        "legend": {
+          "orient": "top",
+          "labelFontSize": 11,
+          "title": null
+        }
+      },
+      "tooltip": [
+        {
+          "field": "State",
+          "title": "State"
+        },
+        {
+          "field": "Type",
+          "title": "Guest Type"
+        },
+        {
+          "field": "Count",
+          "title": "Count",
+          "format": ",.0f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "choropleth": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Hotel Guests Choropleth Map \u2014 classified",
+    "width": "container",
+    "height": 260,
+    "params": [
+      {"name": "zoom_level",  "value": 1500},
+      {"name": "centre_lon",  "value": 109.5},
+      {"name": "centre_lat",  "value": 4.0}
+    ],
+    "projection": {
+      "type": "mercator",
+      "scale": {"expr": "zoom_level"},
+      "center": {"expr": "[centre_lon, centre_lat]"}
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "data/malaysia_states.json",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "transform": [
+          {
+            "lookup": "properties.state",
+            "from": {
+              "data": {
+                "url": "data/state_merged.json"
+              },
+              "key": "State",
+              "fields": [
+                "Total_2025",
+                "AOR_Jan_Dec",
+                "foreign_pct",
+                "Hotels",
+                "Rooms",
+                "yoy_growth"
+              ]
+            }
+          },
+          {
+            "calculate": "datum.Total_2025 < 1000000 ? '< 1M' : datum.Total_2025 < 5000000 ? '1M \u2013 4.9M' : datum.Total_2025 < 8000000 ? '5M \u2013 7.9M' : datum.Total_2025 < 14000000 ? '8M \u2013 13.9M' : '14M+'",
+            "as": "GuestClass"
+          }
+        ],
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white",
+          "strokeWidth": 1.2
+        },
+        "encoding": {
+          "color": {
+            "field": "GuestClass",
+            "type": "ordinal",
+            "scale": {
+              "domain": [
+                "< 1M",
+                "1M \u2013 4.9M",
+                "5M \u2013 7.9M",
+                "8M \u2013 13.9M",
+                "14M+"
+              ],
+              "range": [
+                "#F9E0D4",
+                "#E8A78A",
+                "#D46B47",
+                "#A83A1A",
+                "#5E1A08"
+              ]
+            },
+            "legend": {
+              "title": "Total Hotel Guests 2025",
+              "orient": "bottom",
+              "direction": "horizontal",
+              "columns": 3,
+              "labelFontSize": 12,
+              "titleFontSize": 12,
+              "titleOrient": "top",
+              "symbolSize": 140,
+              "symbolType": "square",
+              "columnPadding": 14,
+              "rowPadding": 6,
+              "padding": 6
+            }
+          },
+          "tooltip": [
+            {
+              "field": "properties.state",
+              "title": "State"
+            },
+            {
+              "field": "Total_2025",
+              "title": "Total Guests 2025",
+              "format": ",.0f"
+            },
+            {
+              "field": "GuestClass",
+              "title": "Guest Range"
+            },
+            {
+              "field": "AOR_Jan_Dec",
+              "title": "Occupancy Rate (%)",
+              "format": ".1f"
+            },
+            {
+              "field": "foreign_pct",
+              "title": "Foreign Guest %",
+              "format": ".1f"
+            },
+            {
+              "field": "Hotels",
+              "title": "No. of Hotels"
+            },
+            {
+              "field": "yoy_growth",
+              "title": "YoY Growth (%)",
+              "format": ".1f"
+            }
+          ]
+        }
+      }
+    ],
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  },
+  "aor_heatmap": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "AOR Heatmap by State and Month",
+    "data": {
+      "url": "data/aor.json"
+    },
+    "width": "container",
+    "height": 300,
+    "transform": [
+      {
+        "fold": [
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "as": [
+          "Month",
+          "AOR"
+        ]
+      }
+    ],
+    "mark": {
+      "type": "rect",
+      "stroke": "white",
+      "strokeWidth": 1.5
+    },
+    "encoding": {
+      "x": {
+        "field": "Month",
+        "type": "ordinal",
+        "sort": [
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "axis": {
+          "labelFontSize": 12,
+          "titleFontSize": 0,
+          "labelAngle": 0
+        }
+      },
+      "y": {
+        "field": "State",
+        "type": "nominal",
+        "sort": {
+          "field": "AOR_Jan_Dec",
+          "order": "descending"
+        },
+        "axis": {
+          "labelFontSize": 10,
+          "titleFontSize": 0
+        }
+      },
+      "color": {
+        "field": "AOR",
+        "type": "quantitative",
+        "scale": {
+          "domain": [
+            30,
+            80
+          ],
+          "range": [
+            "#D4E8ED",
+            "#3A8C96",
+            "#176B73",
+            "#0D3B47"
+          ]
+        },
+        "legend": {
+          "title": "Occupancy %",
+          "orient": "right",
+          "labelFontSize": 10,
+          "titleFontSize": 10,
+          "gradientLength": 120
+        }
+      },
+      "tooltip": [
+        {
+          "field": "State",
+          "title": "State"
+        },
+        {
+          "field": "Month",
+          "title": "Month"
+        },
+        {
+          "field": "AOR",
+          "title": "Occupancy Rate (%)",
+          "format": ".1f"
+        },
+        {
+          "field": "AOR_Jan_Dec",
+          "title": "Full Year Avg (%)",
+          "format": ".1f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#3D3D3D",
+        "domainColor": "transparent",
+        "tickColor": "transparent"
+      }
+    }
+  },
+  "bubble_inventory": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Hotel Inventory Bubble: Hotels vs Rooms by State",
+    "data": {
+      "url": "data/hotel_inventory.json"
+    },
+    "width": "container",
+    "height": 280,
+    "mark": {
+      "type": "point",
+      "filled": true,
+      "color": "#3A8C96",
+      "opacity": 0.8,
+      "stroke": "white",
+      "strokeWidth": 1.5
+    },
+    "encoding": {
+      "x": {
+        "field": "Hotels",
+        "type": "quantitative",
+        "axis": {
+          "title": "Number of Hotels",
+          "labelFontSize": 10,
+          "titleFontSize": 11,
+          "grid": true,
+          "gridColor": "#EEE9E1"
+        }
+      },
+      "y": {
+        "field": "Rooms",
+        "type": "quantitative",
+        "axis": {
+          "title": "Number of Rooms",
+          "labelFontSize": 10,
+          "titleFontSize": 11,
+          "grid": true,
+          "gridColor": "#EEE9E1",
+          "format": ",.0f"
+        }
+      },
+      "size": {
+        "field": "Rooms",
+        "type": "quantitative",
+        "scale": {
+          "range": [
+            80,
+            800
+          ]
+        },
+        "legend": {
+          "title": "Total Rooms",
+          "labelFontSize": 10,
+          "titleFontSize": 10,
+          "orient": "right",
+          "gradientLength": 100
+        }
+      },
+      "tooltip": [
+        {
+          "field": "State",
+          "title": "State"
+        },
+        {
+          "field": "Hotels",
+          "title": "Hotels"
+        },
+        {
+          "field": "Rooms",
+          "title": "Rooms",
+          "format": ",.0f"
+        }
+      ]
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "revenue_line": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 240,
+    "layer": [
+      {
+        "data": {
+          "values": [
+            {
+              "x1": "2015",
+              "x2": "2019",
+              "phase": "Normal",
+              "mid": "2017",
+              "y": 10500
+            }
+          ]
+        },
+        "mark": {
+          "type": "rect",
+          "opacity": 1,
+          "color": "rgba(27,94,110,0.07)"
+        },
+        "encoding": {
+          "x": {
+            "field": "x1",
+            "type": "ordinal"
+          },
+          "x2": {
+            "field": "x2"
+          }
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "x1": "2019",
+              "x2": "2021",
+              "phase": "Vulnerability",
+              "mid": "2020",
+              "y": 10500
+            }
+          ]
+        },
+        "mark": {
+          "type": "rect",
+          "opacity": 1,
+          "color": "rgba(200,90,58,0.09)"
+        },
+        "encoding": {
+          "x": {
+            "field": "x1",
+            "type": "ordinal"
+          },
+          "x2": {
+            "field": "x2"
+          }
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "x1": "2021",
+              "x2": "2024",
+              "phase": "Recovery",
+              "mid": "2023",
+              "y": 10500
+            }
+          ]
+        },
+        "mark": {
+          "type": "rect",
+          "opacity": 1,
+          "color": "rgba(45,90,39,0.07)"
+        },
+        "encoding": {
+          "x": {
+            "field": "x1",
+            "type": "ordinal"
+          },
+          "x2": {
+            "field": "x2"
+          }
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "Year": "2017",
+              "Rev": 10500,
+              "label": "Stable baseline",
+              "c": "#176B73"
+            },
+            {
+              "Year": "2020",
+              "Rev": 10500,
+              "label": "Shock exposed",
+              "c": "#D96B4C"
+            },
+            {
+              "Year": "2023",
+              "Rev": 10500,
+              "label": "Recovery climb",
+              "c": "#D8A72A"
+            }
+          ]
+        },
+        "mark": {
+          "type": "text",
+          "fontSize": 10.5,
+          "fontWeight": "600",
+          "fontStyle": "normal",
+          "opacity": 0.75,
+          "cornerRadius": 4
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Rev",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "label"
+          },
+          "color": {
+            "field": "c",
+            "type": "nominal",
+            "scale": null,
+            "legend": null
+          }
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "Year": "2015",
+              "Rev": 17600,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2016",
+              "Rev": 19900,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2017",
+              "Rev": 19100,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2018",
+              "Rev": 20900,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2019",
+              "Rev": 20800,
+              "Phase": "Normal"
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "color": "#176B73",
+          "strokeWidth": 2.5,
+          "point": {
+            "filled": true,
+            "fill": "#176B73",
+            "stroke": "white",
+            "strokeWidth": 1.5,
+            "size": 55
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal",
+            "axis": {
+              "labelAngle": 0,
+              "labelFontSize": 11,
+              "titleFontSize": 0
+            }
+          },
+          "y": {
+            "field": "Rev",
+            "type": "quantitative",
+            "axis": {
+              "format": ",.0f",
+              "labelFontSize": 10,
+              "title": "Revenue (USD mn)",
+              "titleFontSize": 11,
+              "grid": true,
+              "gridColor": "#EEE9E1"
+            },
+            "scale": {
+              "domain": [
+                0,
+                26000
+              ]
+            }
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "title": "Year"
+            },
+            {
+              "field": "Rev",
+              "title": "Revenue (USD mn)",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "Year": "2019",
+              "Rev": 20800,
+              "Phase": "Vulnerability"
+            },
+            {
+              "Year": "2020",
+              "Rev": 3000,
+              "Phase": "Vulnerability"
+            },
+            {
+              "Year": "2021",
+              "Rev": 0,
+              "Phase": "Vulnerability"
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "color": "#D96B4C",
+          "strokeWidth": 2.5,
+          "point": {
+            "filled": true,
+            "fill": "#D96B4C",
+            "stroke": "white",
+            "strokeWidth": 1.5,
+            "size": 55
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Rev",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                26000
+              ]
+            }
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "title": "Year"
+            },
+            {
+              "field": "Rev",
+              "title": "Revenue (USD mn)",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "Year": "2021",
+              "Rev": 0,
+              "Phase": "Recovery"
+            },
+            {
+              "Year": "2022",
+              "Rev": 6300,
+              "Phase": "Recovery"
+            },
+            {
+              "Year": "2023",
+              "Rev": 15700,
+              "Phase": "Recovery"
+            },
+            {
+              "Year": "2024",
+              "Rev": 22300,
+              "Phase": "Recovery"
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "color": "#D8A72A",
+          "strokeWidth": 2.5,
+          "point": {
+            "filled": true,
+            "fill": "#D8A72A",
+            "stroke": "white",
+            "strokeWidth": 1.5,
+            "size": 55
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Rev",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                26000
+              ]
+            }
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "title": "Year"
+            },
+            {
+              "field": "Rev",
+              "title": "Revenue (USD mn)",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "Year": "2015",
+              "Rev": 17600,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2016",
+              "Rev": 19900,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2017",
+              "Rev": 19100,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2018",
+              "Rev": 20900,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2019",
+              "Rev": 20800,
+              "Phase": "Normal"
+            },
+            {
+              "Year": "2020",
+              "Rev": 3000,
+              "Phase": "Vulnerability"
+            },
+            {
+              "Year": "2021",
+              "Rev": 0,
+              "Phase": "Vulnerability"
+            },
+            {
+              "Year": "2022",
+              "Rev": 6300,
+              "Phase": "Recovery"
+            },
+            {
+              "Year": "2023",
+              "Rev": 15700,
+              "Phase": "Recovery"
+            },
+            {
+              "Year": "2024",
+              "Rev": 22300,
+              "Phase": "Recovery"
+            }
+          ]
+        },
+        "mark": {
+          "type": "text",
+          "dy": -12,
+          "fontSize": 9.5,
+          "fontWeight": "600"
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "Rev",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                26000
+              ]
+            }
+          },
+          "text": {
+            "field": "Rev",
+            "format": ",.0f"
+          },
+          "color": {
+            "field": "Phase",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Normal",
+                "Vulnerability",
+                "Recovery"
+              ],
+              "range": [
+                "#176B73",
+                "#D96B4C",
+                "#D8A72A"
+              ]
+            },
+            "legend": {
+              "orient": "top",
+              "title": null,
+              "labelFontSize": 11,
+              "symbolType": "circle",
+              "symbolSize": 80
+            }
+          }
+        }
+      }
+    ],
+    "resolve": {
+      "scale": {
+        "color": "independent",
+        "y": "shared"
+      }
+    },
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  },
+  "arrivals_annual_bar": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 240,
+    "data": {
+      "url": "data/arrivals_annual.json"
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "cornerRadiusTopLeft": 4,
+          "cornerRadiusTopRight": 4
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal",
+            "axis": {
+              "labelAngle": 0,
+              "labelFontSize": 11,
+              "title": "Year",
+              "titleFontSize": 11,
+              "domainColor": "#DDD6CC",
+              "tickColor": "#DDD6CC"
+            }
+          },
+          "y": {
+            "field": "Arrivals",
+            "type": "quantitative",
+            "axis": {
+              "format": "~s",
+              "labelFontSize": 10,
+              "title": "Total Arrivals",
+              "titleFontSize": 11,
+              "grid": true,
+              "gridColor": "#EEE9E1"
+            }
+          },
+          "color": {
+            "condition": {
+              "test": "datum.Year === 2020 || datum.Year === 2021",
+              "value": "#D96B4C"
+            },
+            "value": "#176B73"
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "title": "Year"
+            },
+            {
+              "field": "Arrivals",
+              "title": "Total Arrivals",
+              "format": ",.0f"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "baseline": 35045625
+            }
+          ]
+        },
+        "mark": {
+          "type": "rule",
+          "color": "#C9B27E",
+          "strokeWidth": 1.8,
+          "strokeDash": [
+            6,
+            3
+          ],
+          "opacity": 0.9
+        },
+        "encoding": {
+          "y": {
+            "field": "baseline",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "Year": "2022",
+              "baseline": 35045625,
+              "label": "2019 pre-pandemic baseline"
+            }
+          ]
+        },
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 4,
+          "dy": -7,
+          "fontSize": 9,
+          "fontWeight": "600",
+          "color": "#C9B27E"
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "baseline",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "label"
+          }
+        }
+      }
+    ],
+    "config": {
+      "font": "DM Sans",
+      "background": "transparent",
+      "view": {
+        "stroke": "transparent"
+      },
+      "axis": {
+        "labelColor": "#777",
+        "domainColor": "#DDD6CC",
+        "tickColor": "#DDD6CC"
+      }
+    }
+  }
+}
