@@ -6,8 +6,6 @@ Built for **FIT2179 Data Visualisation 2** (Monash University) using **Vega-Lite
 
 **[Live Dashboard →](https://nicknificient.github.io/FIT2179-DV2-Malaysia-Tourism/)**
 
-![Dashboard preview — hero section and Visitor Markets](./assets/preview.png)
-
 *Full-page screenshot: [`assets/full-dashboard.png`](./assets/full-dashboard.png)*
 
 ---
