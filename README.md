@@ -2,7 +2,7 @@
 
 An interactive data visualisation dashboard exploring Malaysia's tourism recovery through visitor markets, arrival routes, hotel guest distribution, hotel supply, occupancy patterns, and tourism revenue resilience.
 
-Built for **FIT2179 Data Visualisation 2** (Monash University) using **Vega-Lite**, hand-built SVG, and HTML/CSS/JavaScript.
+Using **Vega-Lite**, hand-built SVG, and HTML/CSS/JavaScript.
 
 **[Live Dashboard →](https://nicknificient.github.io/FIT2179-DV2-Malaysia-Tourism/)**
 
